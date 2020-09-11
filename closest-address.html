@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>AJAX/PHP/CURL/JSON example</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta name="author" content="Paddy Evans">
+
+	</head>
+
+	<body>
+
+		<label for="selLat">Latitude: </label>
+		<input type="number" id="selLat" required value="52.35792">
+		<label for="selLong">Longitude: </label>
+		<input type="number" id="selLong" required value="4.88132">
+
+		<select id="selLanguage">
+			<option value="en">English</option>
+			<option value="fr">Francais</option>
+			<option value="de">Deutsche</option>
+		</select>
+
+		<button id="btnRun">Run</button>
+
+		<br><br>
+
+		<div id="divResults">
+
+			<table>
+
+				<tr>
+					<td align="right">
+						Name:
+					</td>
+					<td id="txtName">
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right">
+						Street:
+					</td>
+					<td id="txtStreet">
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right">
+						Locality:
+					</td>
+					<td id="txtLocality">
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right">
+						Country Code:
+					</td>
+					<td id="txtCountryCode">
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right">
+						Post Code:
+					</td>
+					<td id="txtPostCode">
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right">
+						Latitude:
+					</td>
+					<td id="txtLatitude">
+					</td>
+
+				</tr>
+
+				<tr>
+					<td align="right">
+						Longitude:
+					</td>
+					<td id="txtLongitude">
+					</td>
+				</tr>
+
+			</table>
+
+			<p id="errorMessage"></p>
+
+		</div>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/closest-address.js"></script>
+
+	</body>
+
+</html>
